@@ -10,10 +10,10 @@
 
 <body>
    
-    <div class="container">
-        <div class="row" >
-            <span class="border g-5">
-            <div class="col-12">
+    <div class="container border">
+        <div class="row " >
+            <span class="border g-5 p-3 border bg-light">
+            <div class="col-12 ">
             <h1>Payment form example</h1>
             </div>  
         </span>
@@ -30,7 +30,7 @@
         </div>
         
             <div class="row g-3">
-                <div class="col-sm-5">
+                <div class="col-sm-5 ">
                     <label>Card #</label>
                   <input type="text" class="form-control" placeholder="XXXXXXX" aria-label="Card">
                 </div>
@@ -47,21 +47,21 @@
               </div>
        
         <div class="row ">
-            <div class="col-6">
+            <div class="col-6 gy-3">
                 <label>First Name</label>
                 <input type="text" class="form-control" placeholder="" aria-label="firstname"> 
             </div>
-            <div class="col-6">
+            <div class="col-6 gy-3">
                 <label>Last Name</label>
                 <input type="text" class="form-control" placeholder="" aria-label="lastname"> 
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-5">
+        <div class="row ">
+            <div class="col-sm-5 gy-3">
                 <label>City</label>
               <input type="text" class="form-control" placeholder="" aria-label="City">
             </div>
-            <div class="col-sm">
+            <div class="col-sm gy-3">
                <label>State</label> 
                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                 <option selected>Pick a state</option>
@@ -70,14 +70,15 @@
                 <option value="3">Three</option>
               </select>
             </div>
-            <div class="col-sm">
+            <div class="col-sm gy-3">
                 <label>Postal Code</label>
                 <input type="text" class="form-control" placeholder="Amount" aria-label="amount">
             </div>
          </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 gy-3">
                 <label>We accept: </label><br>
+                <div class="bg-secondary text-white">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                     <label class="form-check-label" for="inlineRadio1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
@@ -97,22 +98,32 @@
                         <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
                         <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
                       </svg></label>
+                    
                   </div>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                     <label class="form-check-label" for="inlineRadio2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-front-fill" viewBox="0 0 16 16">
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
                       </svg></label>
+                    </div>
                   </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 gy-3">
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
             </div>
         </div>
-          
+        
+        <div class="row p-3 border bg-light">
+            <div class="col-10 gy-3"></div>
+            <div class="col-2 gy-3">
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+            
+        </div>
     </div>
 
 </body>
